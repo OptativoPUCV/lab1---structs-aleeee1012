@@ -417,3 +417,20 @@ Thu 16 Mar 2023 04:08:42 PM UTC:
  tests:  3|4
 total_score: 30/70
 58d3970
+Thu 16 Mar 2023 04:22:46 PM UTC: 
+ exercises.c | 7 +++++++
+ 1 file changed, 7 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:86:29: error: expected expression before ‘Vector’
+   86 |   *vect = (Vector*) realloc(Vector, capacidad)*sizeof(Vector);
+      |                             ^~~~~~
+exercises.c:86:21: error: too few arguments to function ‘realloc’
+   86 |   *vect = (Vector*) realloc(Vector, capacidad)*sizeof(Vector);
+      |                     ^~~~~~~
+In file included from test.c:2:
+/nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/stdlib.h:550:14: note: declared here
+  550 | extern void *realloc (void *__ptr, size_t __size)
+      |              ^~~~~~~
+Compilation failed
+f414add
