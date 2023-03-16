@@ -270,3 +270,17 @@ Thu 16 Mar 2023 03:51:27 PM UTC:
  tests:  1|6
 total_score: 10/70
 dd7f450
+Thu 16 Mar 2023 03:53:08 PM UTC: 
+ exercises.c | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘arrayMaxMin’:
+exercises.c:30:20: error: comparison between pointer and integer [-Werror]
+   30 |   for(int k = 1; k < a; k++)
+      |                    ^
+exercises.c:32:10: error: invalid operands to binary % (have ‘int *’ and ‘int’)
+   32 |     if(a % k == 0)
+      |          ^
+cc1: all warnings being treated as errors
+Compilation failed
+440b2e2
