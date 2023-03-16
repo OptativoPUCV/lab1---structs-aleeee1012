@@ -83,7 +83,7 @@ typedef struct
 
 Vector *crearVector(int n)
 {
-  Vector *vecto = (Vector*) malloc(sizeof(Vector * n));
+  Vector *vecto = (Vector*) malloc(sizeof((Vector) * n));
   vecto->datos = (Vector*) calloc(n, sizeof(int));
   vecto->capacidad = n;
   return (vecto);
