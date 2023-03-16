@@ -27,7 +27,11 @@ almacena en las variables apuntadas por max y min.
 */
 void arrayMaxMin(int *a, int n, int *max, int *min)
 {
-  *max = *a;
+  /*while(1)
+  {
+    
+  }
+  *max = *a;*/
 }
 
 
@@ -45,12 +49,13 @@ typedef struct {
 } Persona;
 
 
-Persona* crearPersona(char nombre[], char rut[], int edad) {
+Persona* crearPersona(char nombre[], char rut[], int edad)
+{
    Persona *p = (Persona *) malloc(sizeof(Persona));
    //asignar valores de entrada a los campos de p
-
-
-   return p;
+  strcpy(p -> nombre, nombre);
+  
+  return p;
 }
 
 /*
