@@ -284,3 +284,14 @@ exercises.c:32:10: error: invalid operands to binary % (have ‘int *’ and ‘
 cc1: all warnings being treated as errors
 Compilation failed
 440b2e2
+Thu 16 Mar 2023 03:54:39 PM UTC: 
+ exercises.c | 8 +-------
+ 1 file changed, 1 insertion(+), 7 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘arrayMaxMin’:
+exercises.c:30:8: error: assignment to ‘int’ from ‘int *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   30 |   *max = a;
+      |        ^
+cc1: all warnings being treated as errors
+Compilation failed
+6393286
