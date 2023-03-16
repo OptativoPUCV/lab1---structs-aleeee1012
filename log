@@ -247,3 +247,20 @@ exercises.c:103:8: error: expected expression before ‘Vector’
       |        ^~~~~~
 Compilation failed
 9bf4c34
+Thu 16 Mar 2023 03:51:10 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:103:7: error: variable-sized object may not be initialized
+  103 |       Vector *c[k] = Vector *a[k] + Vector *b[k];
+      |       ^~~~~~
+exercises.c:103:22: error: expected expression before ‘Vector’
+  103 |       Vector *c[k] = Vector *a[k] + Vector *b[k];
+      |                      ^~~~~~
+exercises.c:103:15: error: unused variable ‘c’ [-Werror=unused-variable]
+  103 |       Vector *c[k] = Vector *a[k] + Vector *b[k];
+      |               ^
+cc1: all warnings being treated as errors
+Compilation failed
+402ae64
