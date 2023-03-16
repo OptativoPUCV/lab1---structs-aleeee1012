@@ -68,10 +68,6 @@ typedef struct {
 
 Vector *crearVector(int n)
 {
-  while(1)
-  {
-      if
-  }
   return NULL;
 }
 
