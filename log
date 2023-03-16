@@ -340,3 +340,17 @@ In file included from /nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-
 cc1: all warnings being treated as errors
 Compilation failed
 76ca700
+Thu 16 Mar 2023 03:59:42 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:58:10: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+   58 |   p->edad, edad;
+      |          ^
+exercises.c:58:3: error: statement with no effect [-Werror=unused-value]
+   58 |   p->edad, edad;
+      |   ^
+cc1: all warnings being treated as errors
+Compilation failed
+02d7dc3
