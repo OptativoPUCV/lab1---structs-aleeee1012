@@ -27,13 +27,17 @@ almacena en las variables apuntadas por max y min.
 */
 void arrayMaxMin(int *a, int n, int *max, int *min)
 {
-  /*while(1)
-  {
-    
-  }
-  *max = *a;*/
-}
+  *max = a[0];
+  *min = a[0];
 
+  for(int k = 1; k < n; k++)
+  {
+    if(a[k] > *max)
+    {
+      *max = a[k];
+    }
+  }
+}
 
 /*
 Ejercicio 3.
@@ -42,12 +46,12 @@ crearPersona(...), la cual crea una nueva persona con
 los datos ingresados como parámetros y retorna un puntero 
 al dato recién creado.
 */
-typedef struct {
+typedef struct
+{
   char nombre[30];
   char rut[11];
   int edad;
 } Persona;
-
 
 Persona* crearPersona(char nombre[], char rut[], int edad)
 {
@@ -74,6 +78,7 @@ typedef struct {
 
 Vector *crearVector(int n)
 {
+  
   return NULL;
 }
 
