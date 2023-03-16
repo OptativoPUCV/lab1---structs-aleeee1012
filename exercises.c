@@ -75,21 +75,17 @@ un vector con capacidad `n`, reserva la memoria
 correspondiente para el arreglo con `n` datos 
 inicializados en 0 y luego retorna el vector creado.
 */
-typedef struct {
-   int *datos; // arreglo dinámico
-   int capacidad; // capacidad del arreglo
+typedef struct
+{
+  int *datos; // arreglo dinámico
+  int capacidad; // capacidad del arreglo
 } Vector;
 
 Vector *crearVector(int n)
 {
-  //Vector *vect = NULL;
-  //*vect = (Vector*) realloc(Vector, capacidad)*sizeof(Vector);
-  
-  //Vector *vec = (Vector*) malloc(sizeof(Vector));
-  
-  /*for (int k = 0; k < capacidad; k++)
-  {
-  }*/
+  Vector *vecto = (Vector*) malloc(sizeof(Vector * n));
+  vecto->datos = (Vector*) calloc(n, sizeof(int));
+  vecto->capacidad = n;
   return NULL;
 }
 

@@ -451,3 +451,18 @@ Thu 16 Mar 2023 04:23:30 PM UTC:
  tests:  3|4
 total_score: 30/70
 1561391
+Thu 16 Mar 2023 04:29:54 PM UTC: 
+ exercises.c | 14 +++++---------
+ 1 file changed, 5 insertions(+), 9 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:86:51: error: expected ‘)’ before ‘n’
+   86 |   Vector *vecto = (Vector*) malloc(sizeof(Vector * n));
+      |                                          ~        ^~
+      |                                                   )
+exercises.c:87:16: error: assignment to ‘int *’ from incompatible pointer type ‘Vector *’ [-Werror=incompatible-pointer-types]
+   87 |   vecto->datos = (Vector*) calloc(n, sizeof(int));
+      |                ^
+cc1: all warnings being treated as errors
+Compilation failed
+7319603
