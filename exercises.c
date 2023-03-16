@@ -98,10 +98,10 @@ actualiza el vector `c` con el resultado de la suma.
 */
 void sumaV(Vector *a, Vector *b, Vector *c)
 {
-  for(int k = 0; k != !0; k++)
+  /*for(int k = 0; k != !0; k++)
   {
-      Vector *c[k] = Vector *a[k] + Vector *b[k];
-  }
+       *c[k] = Vector *a[k] + Vector *b[k];
+  }*/
 }
 
 /*
