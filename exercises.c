@@ -68,7 +68,10 @@ typedef struct {
 
 Vector *crearVector(int n)
 {
-  
+  while(1)
+  {
+      if
+  }
   return NULL;
 }
 
@@ -77,7 +80,8 @@ Ejercicio 5a.
 Programe la función void asignarValor(Vector * v, int i, int valor), 
 la cual asigna el valor a la posición i del vector v.
 */
-void asignarValor(Vector * v, int i, int valor) {
+void asignarValor(Vector * v, int i, int valor)
+{
 
 }
 
@@ -86,7 +90,8 @@ Ejercicio 6.
 Programe la función int obtenerValor(Vector * v, int i), 
 la cual retorna el valor en la posición i del vector v.
 */
-int obtenerValor(Vector * v, int i) {
+int obtenerValor(Vector * v, int i)+
+{
    return 0;
 }
 
@@ -95,8 +100,12 @@ Ejercicio 7.
 Función que suma los vectores `a` y `b` y 
 actualiza el vector `c` con el resultado de la suma.
 */
-void sumaV(Vector * a, Vector * b, Vector * c) {
-
+void sumaV(Vector *a, Vector *b, Vector *c)
+{
+  for(int k = 0; k != 0!; k++)
+  {
+      *c = *a + *b;
+  }
 }
 
 /*

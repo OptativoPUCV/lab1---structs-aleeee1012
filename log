@@ -20,3 +20,77 @@ Thu 16 Mar 2023 03:43:37 PM UTC:
  tests:  1|6
 total_score: 10/70
 58a3da0
+Thu 16 Mar 2023 03:47:51 PM UTC: 
+ exercises.c | 19 ++++++++++++++-----
+ 1 file changed, 14 insertions(+), 5 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:74:3: error: expected ‘(’ before ‘}’ token
+   74 |   }
+      |   ^
+      |   (
+exercises.c: In function ‘obtenerValor’:
+exercises.c:93:36: error: expected declaration specifiers before ‘+’ token
+   93 | int obtenerValor(Vector * v, int i)+
+      |                                    ^
+exercises.c:104:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  104 | {
+      | ^
+exercises.c:116:55: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  116 | void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
+      |                                                       ^
+test.c:9:1: error: parameter ‘test_id’ is initialized
+    9 | int test_id = -1;
+      | ^~~
+test.c:12:14: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+   12 | int success(){
+      |              ^
+test.c:17:24: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+   17 | void err_msg(char* msg){
+      |                        ^
+test.c:24:23: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+   24 | void ok_msg(char* msg){
+      |                       ^
+test.c:30:25: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+   30 | void info_msg(char* msg){
+      |                         ^
+test.c:35:75: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+   35 | int test_suite(int(*test)(), char* msg, int max_score, int id, int req_id){
+      |                                                                           ^
+test.c:51:16: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+   51 | int test_swap(){
+      |                ^
+test.c:73:23: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+   73 | int test_arrayMaxMin(){
+      |                       ^
+test.c:111:17: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  111 | int test_creaP(){
+      |                 ^
+test.c:136:17: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  136 | int test_creaV(){
+      |                 ^
+test.c:160:31: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  160 | int test_asignarObtenerValor(){
+      |                               ^
+test.c:191:17: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  191 | int test_sumaV(){
+      |                 ^
+test.c:231:18: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  231 | int test_sumaV2(){
+      |                  ^
+test.c:251:36: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  251 | int main( int argc, char *argv[] ) {
+      |                                    ^
+In file included from test.c:5:
+exercises.c:93:5: error: old-style parameter declarations in prototyped function definition
+   93 | int obtenerValor(Vector * v, int i)+
+      |     ^~~~~~~~~~~~
+test.c:271: error: expected ‘{’ at end of input
+  271 | }
+      | 
+test.c:271: error: control reaches end of non-void function [-Werror=return-type]
+  271 | }
+      | 
+cc1: all warnings being treated as errors
+Compilation failed
+c06e27d
