@@ -434,3 +434,14 @@ In file included from test.c:2:
       |              ^~~~~~~
 Compilation failed
 f414add
+Thu 16 Mar 2023 04:23:20 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:85:11: error: unused variable ‘vect’ [-Werror=unused-variable]
+   85 |   Vector *vect = NULL;
+      |           ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+a041a90
