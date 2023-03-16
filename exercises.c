@@ -100,7 +100,7 @@ void sumaV(Vector *a, Vector *b, Vector *c)
 {
   for(int k = 0; k != !0; k++)
   {
-      *c[k] = Vector a[k] + Vector b[k];
+      *Vector c[k] = Vector *a[k] + Vector *b[k];
   }
 }
 
