@@ -749,3 +749,16 @@ exercises.c:122:17: error: invalid operands to binary + (have ‘Vector’ and �
       |             Vector Vector
 Compilation failed
 0533c85
+Fri 17 Mar 2023 01:57:41 AM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:122:16: error: incompatible types when initializing type ‘int’ using type ‘Vector’
+  122 |     int suma = a[k];
+      |                ^
+exercises.c:123:12: error: incompatible types when assigning to type ‘Vector’ from type ‘int’
+  123 |     c[k] = suma;
+      |            ^~~~
+Compilation failed
+2ed2b8b
