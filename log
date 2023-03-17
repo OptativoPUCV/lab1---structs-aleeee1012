@@ -1140,3 +1140,13 @@ exercises.c:99:4: error: ‘Vector’ has no member named ‘v’
       |    ^~
 Compilation failed
 b52d689
+Fri 17 Mar 2023 08:36:56 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:99:15: error: subscripted value is neither array nor pointer nor vector
+   99 |   v->capacidad[i] = valor;
+      |               ^
+Compilation failed
+265a10a
