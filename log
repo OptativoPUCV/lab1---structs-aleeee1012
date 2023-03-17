@@ -666,3 +666,13 @@ exercises.c:122:10: error: incompatible types when assigning to type ‘Vector�
       |          ^
 Compilation failed
 33f12bb
+Fri 17 Mar 2023 01:52:10 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:122:5: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+  122 |     *c[k] = 1+1;
+      |     ^~~~~
+Compilation failed
+bc21189
