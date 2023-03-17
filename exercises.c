@@ -84,6 +84,7 @@ typedef struct
 Vector *crearVector(int n)
 {
   Vector *vecto = (Vector*) malloc(sizeof(Vector)* n);
+  
   vecto->datos = (int*) calloc(n, sizeof(int));
   vecto->capacidad = n;
   return (vecto);
@@ -129,6 +130,11 @@ sumar (a1,a2)+(b1+b2). Almacene el resultado en el vector c.
 */
 void sumaV2(int a1, int a2, int b1, int b2, Vector *c)
 {
-  //Vector *a = crearVector(2);
-  //Vector *b = crearVector(2);
+  Vector *a = crearVector(2); //se crean vectores 
+  Vector *b = crearVector(2);
+  
+  asignarValor(a, 0, a1);//en 1era. posicion del vecA, se guarde a1
+  asignarValor(a, 0, a2);
+  asignarValor(b, 0, b1);//en 1era. posicion del vecB, se guarde b1
+  asignarValor(b, 0, b2);
 }
