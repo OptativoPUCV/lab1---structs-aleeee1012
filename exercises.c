@@ -134,8 +134,8 @@ void sumaV2(int a1, int a2, int b1, int b2, Vector *c)
   Vector *b = crearVector(2);
   
   asignarValor(a, 0, a1);//en 1era. posicion del vecA, se guarde a1
-  asignarValor(a, 0, a2);
+  asignarValor(a, 1, a2);
   asignarValor(b, 0, b1);//en 1era. posicion del vecB, se guarde b1
-  asignarValor(b, 0, b2);
+  asignarValor(b, 1, b2);
   sumaV(a, b, c);
 }
