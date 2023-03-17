@@ -577,3 +577,19 @@ Fri 17 Mar 2023 01:38:39 AM UTC:
  tests:  4|3
 total_score: 40/70
 e821c79
+Fri 17 Mar 2023 01:49:19 AM UTC: 
+ exercises.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:122:5: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+  122 |     *c[k] = *a[k] + *b[k];
+      |     ^~~~~
+exercises.c:122:13: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+  122 |     *c[k] = *a[k] + *b[k];
+      |             ^~~~~
+exercises.c:122:21: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+  122 |     *c[k] = *a[k] + *b[k];
+      |                     ^~~~~
+Compilation failed
+4850f8f
