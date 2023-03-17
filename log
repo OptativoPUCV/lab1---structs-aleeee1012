@@ -514,3 +514,14 @@ Thu 16 Mar 2023 04:32:53 PM UTC:
  tests:  4|3
 total_score: 40/70
 657f5cf
+Fri 17 Mar 2023 01:11:38 AM UTC: 
+ exercises.c | 9 +++------
+ 1 file changed, 3 insertions(+), 6 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:99:9: error: ‘n’ undeclared (first use in this function)
+   99 |   *(v + n) = valor;
+      |         ^
+exercises.c:99:9: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+7c66254
