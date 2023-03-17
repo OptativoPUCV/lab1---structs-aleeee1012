@@ -525,3 +525,13 @@ exercises.c:99:9: error: ‘n’ undeclared (first use in this function)
 exercises.c:99:9: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 7c66254
+Fri 17 Mar 2023 01:11:45 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:99:14: error: incompatible types when assigning to type ‘Vector’ from type ‘int’
+   99 |   *(v + i) = valor;
+      |              ^~~~~
+Compilation failed
+1d7bd7b
