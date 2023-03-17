@@ -1064,3 +1064,13 @@ exercises.c:99:8: error: invalid type argument of unary ‘*’ (have ‘int’)
       |        ^~~~~~
 Compilation failed
 fb23684
+Fri 17 Mar 2023 08:28:48 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:99:8: error: incompatible types when assigning to type ‘Vector’ from type ‘int’
+   99 |   *v = 12;
+      |        ^~
+Compilation failed
+6138198
