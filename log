@@ -1150,3 +1150,13 @@ exercises.c:99:15: error: subscripted value is neither array nor pointer nor vec
       |               ^
 Compilation failed
 265a10a
+Fri 17 Mar 2023 08:37:13 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:99:7: error: invalid type argument of ‘->’ (have ‘Vector’)
+   99 |   v[i]->capacidad = valor;
+      |       ^~
+Compilation failed
+8037511
