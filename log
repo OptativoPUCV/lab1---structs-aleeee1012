@@ -855,3 +855,9 @@ exercises.c:122:15: error: invalid operands to binary * (have ‘Vector *’ and
       |               ^
 Compilation failed
 652b676
+Fri 17 Mar 2023 02:05:55 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  4|3
+total_score: 40/70
+86fef3e

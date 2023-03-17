@@ -119,7 +119,7 @@ void sumaV(Vector *a, Vector *b, Vector *c)
 {
   for(int k = 0; k < 3; k++)
   {
-    c[k] = *(a*b);
+    c[k] = *a;
   }
 }
 
