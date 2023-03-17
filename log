@@ -639,3 +639,20 @@ exercises.c:122:13: error: unused variable ‘c’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 9848e94
+Fri 17 Mar 2023 01:50:32 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:122:5: error: variable-sized object may not be initialized
+  122 |     Vector *c[k] = Vector a[k] + Vector b[k];
+      |     ^~~~~~
+exercises.c:122:20: error: expected expression before ‘Vector’
+  122 |     Vector *c[k] = Vector a[k] + Vector b[k];
+      |                    ^~~~~~
+exercises.c:122:13: error: unused variable ‘c’ [-Werror=unused-variable]
+  122 |     Vector *c[k] = Vector a[k] + Vector b[k];
+      |             ^
+cc1: all warnings being treated as errors
+Compilation failed
+390bce7
