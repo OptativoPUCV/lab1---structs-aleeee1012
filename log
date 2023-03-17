@@ -1130,3 +1130,13 @@ Fri 17 Mar 2023 08:34:28 PM UTC:
  tests:  4|3
 total_score: 40/70
 57c0220
+Fri 17 Mar 2023 08:36:31 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:99:4: error: ‘Vector’ has no member named ‘v’
+   99 |   v->v[i] = valor;
+      |    ^~
+Compilation failed
+b52d689
