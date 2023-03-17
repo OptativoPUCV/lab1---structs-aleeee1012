@@ -656,3 +656,13 @@ exercises.c:122:13: error: unused variable ‘c’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 390bce7
+Fri 17 Mar 2023 01:51:58 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:122:10: error: incompatible types when assigning to type ‘Vector’ from type ‘int’
+  122 |     *c = 1+1;
+      |          ^
+Compilation failed
+33f12bb
